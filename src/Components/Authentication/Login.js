@@ -16,7 +16,7 @@ const Login = () => {
     const time=new Date();
     
     console.log(email,password)
-    fetch(`http://localhost:5000/users?email=${email}&password=${password}`)
+    fetch(`https://faucets-server.vercel.app/users?email=${email}&password=${password}`)
      .then(res=>res.json()).then(data=>{
       console.log(data)
       console.log(data.role);

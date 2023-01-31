@@ -13,7 +13,7 @@ const Register = () => {
       const time=new Date();
       const user={email,password,time}
       console.log(email,password)
-      fetch("http://localhost:5000/users",{
+      fetch("https://faucets-server.vercel.app/users",{
         method:"POST",
         headers:{
           "content-type":"application/json"
